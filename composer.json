@@ -2,6 +2,9 @@
     "name": "zane/whoops-stackoverflow",
     "description": "a whoops handler with stackoverflow :D",
     "type": "library",
+    "require-dev": {
+        "phpunit/phpunit": "^6.5"
+    },
     "require": {
         "ext-json": "*",
         "filp/whoops": "2.*",
