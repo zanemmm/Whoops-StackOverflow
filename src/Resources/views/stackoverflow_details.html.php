@@ -12,6 +12,10 @@ if (!empty($message)) {
     // if the cache exists, use it
     if (isset($cache[$message])) {
         $questions = $cache[$message];
+        // questions empty
+        if (empty($questions)) {
+            $wrong = "0 results found containing '$message'";
+        }
     } else {
         try {
             $urlMessage = urlencode($message);
