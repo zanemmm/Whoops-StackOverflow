@@ -22,8 +22,5 @@
             "Whoops\\Handler\\": "src/"
         }
     },
-    "archive": {
-        "exclude": ["/*", "!/src"]
-    },
     "minimum-stability": "stable"
 }
