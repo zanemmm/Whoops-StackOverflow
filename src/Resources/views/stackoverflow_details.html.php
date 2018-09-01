@@ -20,9 +20,9 @@ if (!empty($message)) {
         try {
             $urlMessage = urlencode($message);
             $url = 'https://api.stackexchange.com/2.2/search/advanced'
-                . '?page=1&pagesize=5&tagged=php&order=desc&sort=relevance&q='
+                . '?page=1&pagesize=5&order=desc&sort=relevance&q='
                 . $urlMessage
-                . '&accepted=True&site=stackoverflow';
+                . '&site=stackoverflow';
 
             $client = new GuzzleHttp\Client();
             $response = $client->get($url);
